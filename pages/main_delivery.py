@@ -12,6 +12,7 @@ class Delivery(Base):
         self.page.get_by_role("button", name="Да").click()
 
     def modal_to_select_address(self):
+        expect(self.page.get_by_label("choose city")).to_contain_text("Екатеринбург")
         self.page.get_by_role("button", name="Выберите адрес").click()
 
     def confirm_address(self):

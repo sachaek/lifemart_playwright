@@ -12,6 +12,7 @@ class Environment:
     DEVTEST6 = 'devtest6'
     DEVTEST7 = 'devtest7'
     DEV = 'dev'
+    NEW = 'new'
 
     URLS = {
         PRE: 'https://www-devtest6.lifemart.ru/',
@@ -23,7 +24,8 @@ class Environment:
         DEVTEST2: 'https://www-devtest2.lifemart.ru/',
         DEVTEST1: 'https://www-devtest1.lifemart.ru/',
         PROD: 'https://www.lifemart.ru/',
-        DEV: 'https://www.lifemart.ru/'
+        DEV: 'https://www.lifemart.ru/',
+        NEW: 'https://new-www.lifemart.ru/'
     }
 
     def __init__(self, env: str|None = None):
@@ -44,6 +46,8 @@ class Environment:
                 return f'https://www-devtest6.lifemart.ru/'
             case "prod":
                 return f'https://www.lifemart.ru/'
+            case "new":
+                return f'https://new-www.lifemart.ru/'
             case _:
                 raise ValueError(f"Environment error: sent {self.env}")
 

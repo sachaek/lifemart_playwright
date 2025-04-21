@@ -26,4 +26,4 @@ class TestAuth:
 
 def test_fixture_auth(context_auth_group: BrowserContext):
     page = context_auth_group.new_page()
-    page.pause()
+    pass
