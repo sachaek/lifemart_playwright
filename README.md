@@ -1,4 +1,3 @@
-
 # Playwright Setup Guide
 
 ## Установка проекта
@@ -50,3 +49,6 @@ pytest -k "cart or order"
 ```bash
 playwright install
 ```
+
+
+
