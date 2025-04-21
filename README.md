@@ -18,6 +18,11 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+#### Убедитесь, что у вас установлен Python и необходимые зависимости из файла `requirements.txt`.
+#### Для корректной работы Playwright требуется актуальная версия браузеров, которые могут быть установлены с помощью команды:
+```bash
+playwright install
+```
 
 ### 3. Запустите тесты:
 
@@ -43,12 +48,4 @@ pytest --env=devtest5 --log-cli-level=DEBUG -m "smoke and not xfail"
 ```bash
 pytest -k "cart or order"
 ```
-### Примечание:
-- Убедитесь, что у вас установлен Python и необходимые зависимости из файла `requirements.txt`.
-- Для корректной работы Playwright требуется актуальная версия браузеров, которые могут быть установлены с помощью команды:
-```bash
-playwright install
-```
-
-
 
